@@ -145,8 +145,6 @@ function openRoom(roomId, type) {
     }
 
     screenCaptrue && zg.stopScreenShot();
-	
-	alert(' the appSign is ' + appSigin);
 
     //get token   生产环境下获取token方式
     if (!appSigin) {
@@ -188,6 +186,8 @@ function openRoom(roomId, type) {
 function startLogin(roomId, token, type) {
     zg.login(roomId, type, token, function (streamList) {
         console.log('login success');
+		console.log(' the streamList is ' + streamList) ;
+		console.log(' the streamList length' + streamList.length) ;
         loginSuccess(streamList, type);
     }, function (err) {
         loginFailed(err);
