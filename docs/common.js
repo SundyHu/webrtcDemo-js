@@ -1,6 +1,6 @@
 var zg,
-    appid = getParamByName('appid') || 1739272706, // 必填，应用id，请从 即构管理控制台-https://console.zego.im/acount/register 或邮件中获取
-    appSigin = '', // appSigin为即构给客户分配的秘钥，请勿泄漏；（测试环境下是生成token的密码，必填，正式环境需要放到服务端）
+    appid = getParamByName('appid') || 873296761, // 必填，应用id，请从 即构管理控制台-https://console.zego.im/acount/register 或邮件中获取
+    appSigin = '30d70278ffe8cc8513d95715601db860d6777dc76309f70c8db694440475a629', // appSigin为即构给客户分配的秘钥，请勿泄漏；（测试环境下是生成token的密码，必填，正式环境需要放到服务端）
     _config = {
         appid: appid * 1,
         idName: new Date().getTime() + '',
