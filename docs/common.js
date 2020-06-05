@@ -186,8 +186,7 @@ function openRoom(roomId, type) {
 function startLogin(roomId, token, type) {
     zg.login(roomId, type, token, function (streamList) {
         console.log('login success');
-		console.log(' the streamList is ' + streamList) ;
-		console.log(' the streamList length' + streamList.length) ;
+		alert(' the streamIs ' + streamList) ;
         loginSuccess(streamList, type);
     }, function (err) {
         loginFailed(err);
