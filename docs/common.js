@@ -146,7 +146,7 @@ function openRoom(roomId, type) {
 
     screenCaptrue && zg.stopScreenShot();
 	
-	alert(' the appSign is ' + appSign);
+	alert(' the appSign is ' + appSigin);
 
     //get token   生产环境下获取token方式
     if (!appSigin) {
